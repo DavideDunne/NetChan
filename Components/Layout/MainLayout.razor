@@ -1,12 +1,16 @@
 ﻿@inherits LayoutComponentBase
 
-@Body
-
-<div id="blazor-error-ui">
-    An unhandled error has occurred.
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
-    <MudThemeProvider/>
-    <MudDialogProvider/>
-    <MudSnackbarProvider/>
+<PageTitle>NetChan - A Imageboard made in Blazor</PageTitle>
+<MudThemeProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+<div class="page">
+    <div class="darken">
+        <NavMenu />
+    </div>
+    <main>
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
 </div>
